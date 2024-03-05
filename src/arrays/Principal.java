@@ -1,15 +1,21 @@
 package arrays;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Principal {
 
 	public static void main(String[] args) {
-        int[] notas = {8, 5, 4, 9, 10};
+        // int[] notas = {8, 5, 4, 10, 9};
+        Integer[] notas = {8, 5, 4, 10, 9};
 
-        String notasEmString = Arrays.toString(notas); // vai converter para Strings
+        // Ordem natural
+        // Arrays.sort(notas);
 
-        System.out.println(notasEmString);
+        // Ordem decrescente
+        Arrays.sort(notas, Comparator.reverseOrder()); // vai mostrar a ordem reversa
+
+        System.out.println(Arrays.toString(notas));
     }
 
 }
