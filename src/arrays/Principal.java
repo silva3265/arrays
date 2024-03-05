@@ -1,21 +1,22 @@
 package arrays;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
 public class Principal {
 
 	public static void main(String[] args) {
-        // int[] notas = {8, 5, 4, 10, 9};
-        Integer[] notas = {8, 5, 4, 10, 9};
+        Turma turmaB = new Turma();
+        turmaB.identificacao = "Maternal B";
+        turmaB.nomeProfessora = "Tia Maria";
+		turmaB.alunos = new Aluno[3]; // como é um array do tipo 'Aluno', temos que criar uma instancia
 
-        // Ordem natural
-        // Arrays.sort(notas);
+        turmaB.alunos[0] = new Aluno();
+        turmaB.alunos[0].nome = "João";
+        turmaB.alunos[0].idade = 3;
 
-        // Ordem decrescente
-        Arrays.sort(notas, Comparator.reverseOrder()); // vai mostrar a ordem reversa
+        Aluno aluno1 = new Aluno();
+        aluno1.nome = "Laura";
+        aluno1.idade = 4;
 
-        System.out.println(Arrays.toString(notas));
+        turmaB.alunos[1] = aluno1;
     }
 
 }
