@@ -1,22 +1,17 @@
 package arrays;
 
-import java.util.ArrayList;
-
 public class Principal1 {
 	
 	public static void main(String[] args) {
-        ArrayList<String> alunos = new ArrayList<>();
-        alunos.add("João");
-        alunos.add("Maria");
+        String[][] cidades = new String[3][3];
+        cidades[0][0] = "Uberlândia";
+        cidades[0][1] = "Uberaba";
+        cidades[0][2] = "Belo Horizonte";
 
-//        for (int i = 0; i < alunos.size(); i++) { // size() - tamanho
-//            String aluno = alunos.get(i); // get - obter
-//            System.out.println(aluno);
-//        }
+        cidades[1][0] = "São Paulo";
+        cidades[1][1] = "Ribeirão Preto";
 
-        for (String aluno : alunos) {
-            System.out.println(aluno);
-        }
+        cidades[2][0] = "Fortaleza";
     }
 
 }
