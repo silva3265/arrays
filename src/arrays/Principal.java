@@ -1,13 +1,15 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class Principal {
 
 	public static void main(String[] args) {
-		int[] notas = { 8, 5, 4, 9, 10 };
+        int[] notas = {8, 5, 4, 9, 10};
 
-		double media = Calculadora.calcularMedia(notas);
+        String notasEmString = Arrays.toString(notas); // vai converter para Strings
 
-		System.out.println(media);
-	}
+        System.out.println(notasEmString);
+    }
 
 }
