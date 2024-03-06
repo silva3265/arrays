@@ -9,17 +9,15 @@ public class Principal {
 
 		ServicoDeCobranca servicoDeCobranca = new ServicoDeCobranca();
 
-//        String[] emailsCobranca = {"joao@algaworks.com", "maria@algaworks.com"};
-//        servicoDeCobranca.pagar(fatura, emailsCobranca);
+        // Não compila
+        // servicoDeCobranca.pagar(fatura);
 
-//        servicoDeCobranca.pagar(fatura,
-//                new String[]{"joao@algaworks.com", "maria@algaworks.com"});
+        // Compila
+        // servicoDeCobranca.pagar(fatura, "joao@algaworks.com");
 
-//        servicoDeCobranca.pagar(fatura, new String[0]);
-//        servicoDeCobranca.pagar(fatura, new String[]{});
-
-		servicoDeCobranca.pagar(fatura, "joao@algaworks.com", "maria@algaworks.com");
-//        servicoDeCobranca.pagar(fatura);
-	}
+        // Compila
+        servicoDeCobranca.pagar(fatura, "joao@algaworks.com",
+                "maria@algaworks.com", "jose@algaworks.com");
+    }
 
 }
